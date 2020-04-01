@@ -54,8 +54,8 @@ World`
 
 	// String 길이 구하기
 	fmt.Println(s1)
-	fmt.Println(len(s1)) // 11
-	fmt.Println(len(s2)) // 6
+	fmt.Println(len(s1))                    // 11
+	fmt.Println(len(s2))                    // 6
 	fmt.Println(utf8.RuneCountInString(s2)) // 2
 
 	// 문자열 연산
@@ -63,5 +63,21 @@ World`
 	fmt.Println(s1 + s2)
 	fmt.Println(s1 + s2 + "반갑습니다")
 	fmt.Printf("%c\n", s1[0]) // H
+
+	fmt.Println("-----------")
+	const num1 int = 10
+	// num1 = 20 compile error
+
+	const (
+		Sunday = iota
+		Monday
+		Tuesday
+		Wednesday
+		Thursday
+		Friday
+		Saturday
+		numberOfDays
+	)
+	fmt.Println(Monday)
 
 }

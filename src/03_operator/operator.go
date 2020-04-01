@@ -21,7 +21,7 @@ func main() {
 	var num4 float32 = 2.2
 
 	fmt.Println()
-	// fmt.Println(num3 + num4) comfile error
+	// fmt.Println(num3 + num4) compile error
 	fmt.Println(num3 + int(num4))
 
 
